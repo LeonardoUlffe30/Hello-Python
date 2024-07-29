@@ -1,7 +1,3 @@
-# Clase en vídeo: https://youtu.be/_y9qQZXE24A?t=20480
-
-### Users DB API ###
-
 from fastapi import APIRouter, HTTPException, status
 from db.models.user import User
 from db.schemas.user import user_schema, users_schema
@@ -37,9 +33,9 @@ async def user(user: User):
     user_dict = dict(user)
     del user_dict["id"]
 
-    id = db_client.users.insert_one(user_dict).inserted_id
+    id = db_client.local.users.insert_one(user_dict).inserted_id
 
-    new_user = user_schema(db_client.users.find_one({"_id": id}))
+    new_user = user_schema(db_client.local.users.find_one({"_id": id}))
 
     return User(**new_user)
 

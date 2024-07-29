@@ -34,19 +34,19 @@ class UserDB(User):
 
 
 users_db = {
-    "mouredev": {
-        "username": "mouredev",
-        "full_name": "Brais Moure",
-        "email": "braismoure@mourede.com",
+    "leonardo": {
+        "username": "leoulffe",
+        "full_name": "Leonardo Ulffe",
+        "email": "leonardo.ulffe.2003@gmail.com",
         "disabled": False,
-        "password": "$2a$12$B2Gq.Dps1WYf2t57eiIKjO4DXC3IUMUXISJF62bSRiFfqMdOI2Xa6"
+        "password": "123456"
     },
-    "mouredev2": {
-        "username": "mouredev2",
-        "full_name": "Brais Moure 2",
-        "email": "braismoure2@mourede.com",
+    "leonardo2": {
+        "username": "leoulffe2",
+        "full_name": "Leonardo Ulffe2",
+        "email": "leonardo.ulffe.2003@gmail.com",
         "disabled": True,
-        "password": "$2a$12$SduE7dE.i3/ygwd0Kol8bOFvEABaoOOlC8JsCSr6wpwB4zl5STU4S"
+        "password": "654321"
     }
 }
 
